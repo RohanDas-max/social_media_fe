@@ -1,0 +1,65 @@
+
+$backGround: #5DA3FA;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $backGround;
+  border-radius: 15px;
+  align-items: center;
+  margin-top: -5px;
+  width: 100%;
+
+  .leftside {
+    margin-left: 8px;
+    input {
+      background-color: $backGround;
+      border-radius: 5px;
+      border-style: none;
+      padding: 10px;
+      cursor: pointer;
+      font-family: "Style Script", cursive;
+      font-size: 30px;
+    }
+  }
+  button {
+    display: none;
+  }
+
+  .search {
+    display: flex;
+
+    input {
+      border-style: none;
+      padding: 5px;
+      border-style: none;
+      border-radius: 10px;
+      cursor: text;
+      outline: none;
+    }
+    span {
+      display: none;
+      background: green;
+      padding: 5px;
+      padding-right: 8px;
+      border-radius: 5px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      list-style: none;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media (max-width:438px){
+  .nav{
+    width: fit-content;
+  }
+}
