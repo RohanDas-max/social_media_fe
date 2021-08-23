@@ -1,19 +1,22 @@
-.post {
+form {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  form {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 15px;
-    background-color: #5da3fa;
-    textarea {
-      width: 400px;
-      height: 100px;
-      outline: none;
-      resize: none;
-    }
+  padding: 8px;
+  border-radius: 15px;
+  background-color: none;
+
+  textarea {
+    width: 400px;
+    height: 100px;
+    outline: none;
+    resize: none;
+  }
+  label {
+    text-align: center;
+  }
+  .file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
   }
 }

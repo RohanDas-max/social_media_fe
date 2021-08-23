@@ -2,7 +2,8 @@ import Navbar from "../components/Navbar";
 import Post from "../components/Post";
 import Feed from "../components/Feed";
 import SideMenu from "../components/SideMenu";
-import "../styles/App.scss";
+import "../styles/home.scss";
+import FriendsStatus from "../components/FriendsStatus";
 
 const Home = () => {
   return (
@@ -11,13 +12,17 @@ const Home = () => {
         <Navbar />
       </section>
       <section className="Post">
-        <Post />
-        <Feed />
+        <div >
+          <Post />
+          <Feed />
+        </div>
       </section>
       <section className="Left">
         <SideMenu />
       </section>
-      <section className="right">right</section>
+      <section className="right">
+        <FriendsStatus />
+      </section>
     </div>
   );
 };
