@@ -1,18 +1,19 @@
-import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
-import PublishIcon from '@material-ui/icons/Publish';
+import { Button } from "@material-ui/core";
+
 import "../styles/post.scss";
 
 const Post = () => {
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
-      <textarea placeholder="What's on your mind!" />
-
-      <label>
-        <PhotoLibraryIcon style={{ color:"#B9345A", marginTop: "40px" }} />
-        <input type="file" placeholder="add file" className="file" />
-      </label>
-      <button style={{ background: "none", border: "none" }} ><PublishIcon/></button>
-    </form>
+    <>
+      <form className="post">
+        <textarea className="textarea" placeholder="What's on Your Mind!..." />
+        <label style={{color:"white", textAlign:"center" }}>
+          ADD FILE
+          <input type="file" className="file"/>
+        </label>
+        <Button style={{color:"white"}} >Add Post</Button>
+      </form>
+    </>
   );
 };
 

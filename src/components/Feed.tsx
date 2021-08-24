@@ -86,6 +86,14 @@ const Feed = () => {
               </Typography>
             </CardContent>
           </CardActionArea>
+          <CardActions  style={{display: "flex", flexDirection: "row"}} >
+            <Typography color="error">
+              10 Likes
+            </Typography>
+            <Typography color="error">
+              30 Comments
+            </Typography>
+          </CardActions>
           <CardActions style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
             <Button size="small" color="primary">
               Like

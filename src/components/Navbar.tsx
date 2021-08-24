@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import PersonIcon from "@material-ui/icons/Person";
 import EmailIcon from "@material-ui/icons/Email";
@@ -8,16 +8,16 @@ const Navbar = () => {
   return (
     <div className="nav">
       <div className="leftside">
-        <input value="socials" type="submit" />
+        <Typography className="input">Social</Typography>
         <Button>
           <MenuIcon />
         </Button>
       </div>
 
-      <form className="search" onSubmit={(e)=>e.preventDefault()} >
-        <input type="search" placeholder="Search..." />
+     
+        <input className="search" type="search" placeholder="Search..." />
         
-      </form>
+    
 
       <ul>
         <li>
