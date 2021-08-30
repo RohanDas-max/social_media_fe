@@ -12,7 +12,7 @@ const Home = () => {
         <Navbar />
       </section>
       <section className="Post">
-        <div >
+        <div>
           <Post />
           <Feed />
         </div>

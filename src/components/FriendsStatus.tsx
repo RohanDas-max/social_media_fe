@@ -51,16 +51,18 @@ const FriendsStatus = () => {
       <header>
         <Typography>Contacts</Typography>
       </header>
-      <div className="list" >
-      {user.map((user) => (
+      <div className="list">
+        {user.map((user) => (
           <ul key={user.name}>
             {user.status === "active" ? (
               <li>{user.name}</li>
             ) : (
-              <li style={{ color: "red" }}>{user.name}</li>
+              <li style={{ color: "red" }}>
+                {user.name}
+                </li>
             )}
           </ul>
-      ))}
+        ))}
       </div>
     </section>
   );

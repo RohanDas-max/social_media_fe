@@ -1,27 +1,3 @@
 .section{
-    background: #283845;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-    border-radius: 20px;
-    transition: 0.3s;
-    height: 35rem;
-    color: yellowgreen;
-         
-
-    div{
-       
-        ul{
-            li{
-                list-style: none;
-                color: white;
-            }
-        }
-    }
-}
-
-
-.section:hover{
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background: red;
 }

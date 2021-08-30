@@ -6,6 +6,7 @@ import {
   Button,
   CardActions,
   CardMedia,
+  Avatar,
 } from "@material-ui/core";
 import "../styles/Feed.scss";
 
@@ -80,7 +81,10 @@ const Feed = () => {
               title="Contemplative Reptile"
             />
             <CardContent  style={{ display: "flex", flexDirection: "column", alignItems: "start", width:"80%" }}>
-              <Typography  variant="h5" component="h2">{posts.creator}</Typography>
+              
+              <Typography  variant="h5" component="h2">
+              <img src={posts.image} height="20px" width="20px" className="profilePic" />
+                {posts.creator}</Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 {posts.captions}
               </Typography>

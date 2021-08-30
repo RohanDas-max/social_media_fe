@@ -2,13 +2,10 @@
   background: #073b3a;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-radius: 25px;
-  height: 35rem;
   transition: 0.3s;
-  
-  Button {
+  >Button {
     margin-top: 10px;
     margin-bottom: 30px;
     color: white;
@@ -16,5 +13,5 @@
 }
 
 .div:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
